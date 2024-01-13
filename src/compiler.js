@@ -5,14 +5,6 @@ export function initComponent({ template, data }, vm) {
   const container = document.createElement('div')
   container.innerHTML = template
   const nodes = [...container.getElementsByTagName('*')]
-
-
-  nodes.forEach(node => {
-    const vFor = node.getAttribute('v-for')
-    if (vFor) {
-
-    }
-  })
   render(vm, nodes, data, template)
 }
 
